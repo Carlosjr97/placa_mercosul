@@ -1,0 +1,147 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+body::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0,0,0,0.75);
+    position: absolute;
+}
+.container {
+    position: relative;
+    text-align: center;
+    width: 550px;
+    padding: 100px;
+    background: linear-gradient(to right, var(--color1), var(--color2));
+    --color1: white;
+    --color2: #DDDDDD;
+    border-radius: 2px;
+
+}
+
+.azul{
+    position: absolute;
+    width: 550px;
+    height: 40px;
+    margin-top: -100px;
+    margin-left: -100px;
+    background-color: #171796;
+}
+h3{
+    position: absolute;
+    color: white;
+    margin-top: -90px;
+    margin-left: 130px;
+}
+img{
+    position: absolute;
+    width: 40px;
+    margin-top: -93px;
+    margin-left: 230px;
+}
+button {
+    position: absolute;
+    cursor: pointer;
+    border: none;
+    padding: 5px 9px;
+    border-radius: 5px;
+    background-color: #171796; 
+    color: white;
+    margin-top: 120px;
+    margin-left: -30px;
+}
+.btn:hover, a:hover{
+    opacity: 0.9;
+}
+p{
+    position: absolute;
+    font-size: 80px;
+    margin-top: -15px;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    letter-spacing: 0.1cm;
+    font-family: "Coda", system-ui;
+    
+}
+.img1 {
+    width: 38px;
+    height: 25px;
+    margin-left: -270px;
+}
+.qrcode {
+    width: 23px;
+    height: 22px;
+    margin-left: -270px;
+    margin-top: -53px;
+}
+h2 {
+    position: absolute;
+    margin-top: 75px;
+    margin-left: -90px;
+
+}
+
+/* Media Query para telas pequenas (por exemplo, até 600px) */
+@media screen and (max-width: 600px) {
+    
+    .azul{
+        top: 77%;
+        width: 332px;
+        height: 30px;
+        left: 30%;
+    }
+    
+    .container {
+        padding: 10px; /* Ajuste adicional para telas ainda menores */
+        height: 100px;
+        width: 330px;
+    }
+    p {
+        font-size: 15vw; /* Ajuste adicional para telas ainda menores */
+        left: 15%;
+        top: 30%;  
+    }
+    
+    h2 {
+        font-size: 12px;
+        left: 28%;
+    }
+
+    h3{
+        top: 73%;
+    }
+
+    .qrcode{
+        left: 82%;
+        top: 60%;
+    }
+
+    img{
+        width: 25px;
+        left: 21%;
+        top: 76%;
+    }
+
+    .img1{
+        width: 25px;
+        height: 18px;
+        left: 83%;
+
+    }
+    /* Adicione mais ajustes conforme necessário */
+}
+
